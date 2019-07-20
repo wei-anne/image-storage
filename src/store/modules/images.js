@@ -11,7 +11,7 @@
 //working with image resource, like fetching them from Imgur, uploading and deleting images
 
 import api from "../../api/imgur";
-import { router } from "../../main";
+import router from "../../router";
 
 const state = {
     images: [],

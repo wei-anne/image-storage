@@ -5,9 +5,9 @@
 
 import qs from "qs";
 import axios from "axios";
-import { router } from "../main";
+import router from "../router";
 
-const CLIENT_ID = "b97fa3d74059657";
+const CLIENT_ID = process.env.VUE_APP_CLIENT_ID;
 const ROOT_URL = "https://api.imgur.com";
 
 export default {

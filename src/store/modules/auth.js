@@ -13,7 +13,7 @@
 import api from "../../api/imgur";
 import qs from "qs";
 // because it's not default, when importing we need to add curly braces
-import {router} from "../../main";
+import router from "../../router";
 
 // localstorage is a global browser feature that can be found in the console; it allows us to store variables that will be persisted specifically to the domain that we're on
 const state = {
