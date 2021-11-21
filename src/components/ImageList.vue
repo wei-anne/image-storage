@@ -67,7 +67,11 @@ export default {
             this.deletedImages = [];
         }
     },
-    created() {this.fetchImages();}
+    created() {
+        if (this.isLoggedIn) {
+            this.fetchImages();
+        }
+    },
 }
 </script>
 
