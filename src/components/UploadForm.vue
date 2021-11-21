@@ -1,6 +1,7 @@
 <template>
     <div class="dropper ui segment">
-        <!-- by adding the dollar sign, it telles vue that we want to take the event object that comes from the change event; without $, vue will be looking at anything called 'event' that is tied to our component-->
+        <!-- by adding the $ sign, it telles vue that we want to take the event object that comes from the change event;
+        without $, vue will be looking at anything named 'event' that is tied to this component-->
         <input type="file" 
         multiple
         accept="image/*" 

@@ -1,8 +1,8 @@
-// four sections in the module design:
-// put coral variables in STATE section
-// do computation of the state record in GETTERS section
-// do distinct small job to state record in MUTATIONs section
-// assemble mutiple/one mutation(s) in ACTIONS section
+// There are four parts structured in a Module:
+// State: The State section holds all of the raw data (defined as key-value object) related to this particular Module.
+// Getters: Getters are functions that take the data in State section, and do some filtering or computation.
+// Mutations: Mutations are functions that do one single thing to modify the data in State section.
+// Actions: Actions are functions that assemble together multiple Mutations, and call those Mutations in some sequence or series at a very particular time. (Note that it’s fine to call ONLY ONE Mutation in an Action.)
 
 // Automatic Components Updates:
 // anytime we call an ACTION that updates our STATE, it cause every single component that is using one of the module GETTERS to update as well
